@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ICPC Internship Programme – Application Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "icpc-orange": "#F97316",
+              "icpc-orange-dark": "#EA580C",
+              "icpc-cream": "#FFF7EA",
+              "icpc-peach": "#FFE3C4",
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+            },
+            keyframes: {
+              "float-soft": {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-6px)" },
+              },
+              "pulse-soft": {
+                "0%, 100%": { transform: "scale(1)", opacity: "0.8" },
+                "50%": { transform: "scale(1.03)", opacity: "1" },
+              },
+            },
+            animation: {
+              "float-soft": "float-soft 7s ease-in-out infinite",
+              "pulse-soft": "pulse-soft 3s ease-in-out infinite",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-icpc-cream text-slate-900 antialiased">
+    <div id="site-header"></div>
+
+    <main>
+      <!-- Hero / Banner -->
+      <section
+        class="relative overflow-hidden bg-gradient-to-b from-icpc-peach to-icpc-cream"
+      >
+        <div
+          class="mx-auto flex max-w-6xl flex-col items-center gap-10 px-4 pb-12 pt-28 md:flex-row md:items-start md:gap-16 md:px-6 lg:px-8 lg:pb-20 lg:pt-32"
+        >
+          <div class="md:w-1/2">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-icpc-orange">
+              ICPC Internship Programme
+            </p>
+            <h1
+              class="mt-3 text-3xl font-semibold leading-tight text-slate-900 md:text-4xl lg:text-[2.6rem]"
+            >
+              Application Form
+            </h1>
+            <p class="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
+              Thank you for your interest in the ICPC Internship Programme. This form
+              allows us to understand your background, interests, and motivation for
+              participating in the programme. The information you provide helps our
+              admissions team evaluate whether the programme aligns with your goals and
+              aspirations.
+            </p>
+            <p class="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
+              Please complete the form carefully and ensure that all details provided
+              are accurate.
+            </p>
+          </div>
+
+          <!-- Right-side visual -->
+          <div
+            class="relative flex w-full justify-center md:w-1/2 md:justify-end"
+            aria-hidden="true"
+          >
+            <div
+              class="relative h-64 w-52 overflow-hidden rounded-2xl bg-white shadow-xl ring-4 ring-white/70 md:h-80 md:w-64 animate-float-soft"
+            >
+              <div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-icpc-orange/15 blur-2xl"></div>
+              <div class="absolute -bottom-14 -left-12 h-48 w-48 rounded-full bg-icpc-orange/10 blur-2xl"></div>
+              <div class="relative flex h-full flex-col justify-between p-5">
+                <div class="space-y-2">
+                  <div class="h-2.5 w-20 rounded-full bg-slate-200"></div>
+                  <div class="h-3 w-28 rounded-full bg-slate-200"></div>
+                  <div class="mt-3 h-2 w-40 rounded-full bg-slate-100"></div>
+                  <div class="h-2 w-36 rounded-full bg-slate-100"></div>
+                  <div class="h-2 w-32 rounded-full bg-slate-100"></div>
+                </div>
+                <div class="space-y-3">
+                  <div class="h-10 rounded-xl border border-slate-100 bg-icpc-cream"></div>
+                  <div class="h-10 rounded-xl border border-slate-100 bg-icpc-cream"></div>
+                  <div class="h-10 rounded-xl border border-slate-100 bg-icpc-cream"></div>
+                  <div class="h-11 rounded-full bg-icpc-orange"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What this application includes -->
+      <section class="bg-white py-10 md:py-14">
+        <div class="mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
+          <div class="text-center">
+            <h2
+              class="text-xl font-semibold uppercase tracking-[0.2em] text-icpc-orange md:text-2xl"
+            >
+              What this application includes
+            </h2>
+            <p class="mt-3 text-sm text-slate-700 md:text-base">
+              The application form will ask for a few key details, including:
+            </p>
+          </div>
+
+          <div
+            class="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:mt-10 lg:grid-cols-5"
+          >
+            <div
+              class="flex flex-col items-center rounded-xl bg-icpc-cream px-4 py-5 text-center shadow-sm"
+            >
+              <span
+                class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-icpc-orange/10 text-icpc-orange"
+              >
+                1
+              </span>
+              <p class="text-sm font-medium text-slate-900">
+                Personal and contact information
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center rounded-xl bg-icpc-cream px-4 py-5 text-center shadow-sm"
+            >
+              <span
+                class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-icpc-orange/10 text-icpc-orange"
+              >
+                2
+              </span>
+              <p class="text-sm font-medium text-slate-900">
+                Academic background &amp; professional details
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center rounded-xl bg-icpc-cream px-4 py-5 text-center shadow-sm"
+            >
+              <span
+                class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-icpc-orange/10 text-icpc-orange"
+              >
+                3
+              </span>
+              <p class="text-sm font-medium text-slate-900">
+                Interests in policy, politics &amp; governance
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center rounded-xl bg-icpc-cream px-4 py-5 text-center shadow-sm"
+            >
+              <span
+                class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-icpc-orange/10 text-icpc-orange"
+              >
+                4
+              </span>
+              <p class="text-sm font-medium text-slate-900">
+                Availability for upcoming batches
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center rounded-xl bg-icpc-cream px-4 py-5 text-center shadow-sm"
+            >
+              <span
+                class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-icpc-orange/10 text-icpc-orange"
+              >
+                5
+              </span>
+              <p class="text-sm font-medium text-slate-900">
+                Short statement on why you wish to join
+              </p>
+            </div>
+          </div>
+
+          <p class="mt-6 text-center text-xs text-slate-600 md:text-sm">
+            The form typically takes <span class="font-semibold">5–7 minutes</span> to
+            complete.
+          </p>
+        </div>
+      </section>
+
+      <!-- Application form -->
+      <section id="application-form" class="bg-icpc-cream py-10 md:py-14">
+        <div class="mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
+          <div class="mb-6 text-center md:mb-8">
+            <h2 class="text-xs font-semibold uppercase tracking-[0.25em] text-icpc-orange">
+              ICPC Internship Programme
+            </h2>
+            <p class="mt-2 text-2xl font-semibold text-slate-900 md:text-3xl">
+              Application
+            </p>
+          </div>
+
+          <form
+            class="space-y-6 rounded-2xl bg-white p-5 shadow-md md:p-8"
+            action="#"
+            method="post"
+          >
+            <div
+              class="grid gap-4 md:grid-cols-2 md:gap-6"
+            >
+              <div class="space-y-1.5">
+                <label class="text-sm font-medium text-slate-800" for="first-name">
+                  First Name
+                </label>
+                <input
+                  id="first-name"
+                  name="first-name"
+                  type="text"
+                  class="block w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none ring-icpc-orange/10 transition focus:border-icpc-orange focus:ring-2"
+                  placeholder="Enter your first name"
+                />
+              </div>
+              <div class="space-y-1.5">
+                <label class="text-sm font-medium text-slate-800" for="last-name">
+                  Last Name
+                </label>
+                <input
+                  id="last-name"
+                  name="last-name"
+                  type="text"
+                  class="block w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none ring-icpc-orange/10 transition focus:border-icpc-orange focus:ring-2"
+                  placeholder="Enter your last name"
+                />
+              </div>
+
+              <div class="space-y-1.5">
+                <label class="text-sm font-medium text-slate-800" for="email">
+                  Email Address
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  class="block w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none ring-icpc-orange/10 transition focus:border-icpc-orange focus:ring-2"
+                  placeholder="Enter your email address"
+                />
+              </div>
+              <div class="space-y-1.5">
+                <label class="text-sm font-medium text-slate-800" for="phone">
+                  Phone Number
+                </label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  class="block w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none ring-icpc-orange/10 transition focus:border-icpc-orange focus:ring-2"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+
+              <div class="space-y-1.5">
+                <label class="text-sm font-medium text-slate-800" for="city">
+                  City / Location
+                </label>
+                <input
+                  id="city"
+                  name="city"
+                  type="text"
+                  class="block w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none ring-icpc-orange/10 transition focus:border-icpc-orange focus:ring-2"
+                  placeholder="Enter your city or location"
+                />
+              </div>
+              <div class="space-y-1.5">
+                <label class="text-sm font-medium text-slate-800" for="dob">
+                  Date of Birth
+                </label>
+                <input
+                  id="dob"
+                  name="dob"
+                  type="date"
+                  class="block w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none ring-icpc-orange/10 transition focus:border-icpc-orange focus:ring-2"
+                />
+              </div>
+
+              <div class="space-y-1.5">
+                <label class="text-sm font-medium text-slate-800" for="gender">
+                  Gender (Optional)
+                </label>
+                <select
+                  id="gender"
+                  name="gender"
+                  class="block w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm outline-none ring-icpc-orange/10 transition focus:border-icpc-orange focus:ring-2"
+                >
+                  <option value="">Select your gender</option>
+                  <option>Female</option>
+                  <option>Male</option>
+                  <option>Non-binary</option>
+                  <option>Prefer not to say</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="space-y-1.5">
+                <label class="text-sm font-medium text-slate-800" for="qualification">
+                  Highest Qualification
+                </label>
+                <select
+                  id="qualification"
+                  name="qualification"
+                  class="block w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm outline-none ring-icpc-orange/10 transition focus:border-icpc-orange focus:ring-2"
+                >
+                  <option value="">Select your highest qualification</option>
+                  <option>Undergraduate (in progress)</option>
+                  <option>Undergraduate (completed)</option>
+                  <option>Postgraduate</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="space-y-1.5">
+                <label class="text-sm font-medium text-slate-800" for="field-of-study">
+                  Field of Study
+                </label>
+                <input
+                  id="field-of-study"
+                  name="field-of-study"
+                  type="text"
+                  class="block w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none ring-icpc-orange/10 transition focus:border-icpc-orange focus:ring-2"
+                  placeholder="Select your field of study"
+                />
+              </div>
+              <div class="space-y-1.5">
+                <label class="text-sm font-medium text-slate-800" for="university">
+                  Name of University / Institution
+                </label>
+                <input
+                  id="university"
+                  name="university"
+                  type="text"
+                  class="block w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none ring-icpc-orange/10 transition focus:border-icpc-orange focus:ring-2"
+                  placeholder="Enter your university or institution"
+                />
+              </div>
+
+              <div class="space-y-1.5 md:col-span-2">
+                <label class="text-sm font-medium text-slate-800" for="graduation-year">
+                  Year of Graduation (or Expected Graduation Year)
+                </label>
+                <input
+                  id="graduation-year"
+                  name="graduation-year"
+                  type="text"
+                  class="block w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none ring-icpc-orange/10 transition focus:border-icpc-orange focus:ring-2"
+                  placeholder="Enter your graduation year"
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-col justify-between gap-4 border-t border-slate-100 pt-4 md:flex-row">
+              <button
+                type="button"
+                class="inline-flex items-center justify-center rounded-full border border-slate-200 px-6 py-2 text-sm font-medium text-slate-800 transition-transform transition-shadow duration-200 hover:-translate-y-0.5 hover:border-icpc-orange hover:text-icpc-orange hover:shadow-md active:scale-95"
+              >
+                &larr; Previous
+              </button>
+              <button
+                type="submit"
+                class="inline-flex items-center justify-center rounded-full bg-icpc-orange px-8 py-2.5 text-sm font-semibold uppercase tracking-[0.15em] text-white shadow-md transition-transform transition-shadow duration-200 hover:-translate-y-0.5 hover:bg-icpc-orange-dark hover:shadow-lg active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-icpc-orange/40"
+              >
+                Next &rarr;
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- FAQs -->
+      <section id="faqs" class="bg-white py-10 md:py-14">
+        <div class="mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
+          <div class="text-center">
+            <h2 class="text-xl font-semibold uppercase tracking-[0.2em] text-icpc-orange md:text-2xl">
+              FAQs
+            </h2>
+            <p class="mt-3 text-sm text-slate-700 md:text-base">
+              Quick answers to common questions about the programme and application.
+            </p>
+          </div>
+
+          <div class="mx-auto mt-8 max-w-3xl space-y-3 lg:mt-10">
+            <details class="group rounded-2xl border border-slate-100 bg-icpc-cream p-5">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4">
+                <span class="text-sm font-semibold text-slate-900 md:text-base">
+                  How long does the application take?
+                </span>
+                <span class="text-icpc-orange transition group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-3 text-sm leading-relaxed text-slate-700">
+                Most applicants complete it in around 5–7 minutes.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-slate-100 bg-icpc-cream p-5">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4">
+                <span class="text-sm font-semibold text-slate-900 md:text-base">
+                  Is the programme open to students and working professionals?
+                </span>
+                <span class="text-icpc-orange transition group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-3 text-sm leading-relaxed text-slate-700">
+                Yes—ICPC welcomes applicants from varied academic and professional backgrounds.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-slate-100 bg-icpc-cream p-5">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4">
+                <span class="text-sm font-semibold text-slate-900 md:text-base">
+                  What happens after I submit the application?
+                </span>
+                <span class="text-icpc-orange transition group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-3 text-sm leading-relaxed text-slate-700">
+                Our admissions team reviews your details and reaches out with next steps for the upcoming batch.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script type="module" src="./public/js/main.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ICPC Internship Programme – Career Outcomes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "icpc-orange": "#F97316",
+              "icpc-orange-dark": "#EA580C",
+              "icpc-cream": "#FFF7EA",
+              "icpc-peach": "#FFE3C4",
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+            },
+            keyframes: {
+              "float-soft": {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-6px)" },
+              },
+              "pulse-soft": {
+                "0%, 100%": { transform: "scale(1)", opacity: "0.8" },
+                "50%": { transform: "scale(1.03)", opacity: "1" },
+              },
+              "gradient-fluid": {
+                "0%, 100%": { "background-position": "0% 50%" },
+                "50%": { "background-position": "100% 50%" },
+              },
+            },
+            animation: {
+              "float-soft": "float-soft 7s ease-in-out infinite",
+              "pulse-soft": "pulse-soft 3s ease-in-out infinite",
+              "gradient-fluid": "gradient-fluid 12s ease infinite",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .gradient-fluid {
+        background-size: 200% 200%;
+        animation: gradient-fluid 12s ease infinite;
+      }
+
+      .loop-spin {
+        animation: spin-soft 16s linear infinite;
+      }
+
+      .wave-loop {
+        animation: wave-soft 5.5s ease-in-out infinite;
+      }
+
+      .animate-slide-in {
+        animation: slide-in 0.3s ease-out;
+      }
+
+      @keyframes spin-soft {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes wave-soft {
+        0%, 100% {
+          transform: translateY(0) scale(1);
+        }
+        50% {
+          transform: translateY(-5px) scale(1.02);
+        }
+      }
+
+      @keyframes slide-in {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-icpc-cream text-slate-900 antialiased">
+    <div id="site-header"></div>
+
+    <main>
+      <!-- Hero -->
+      <section class="relative overflow-hidden bg-gradient-to-b from-slate-900 to-slate-950 text-white gradient-fluid">
+        <div class="absolute inset-0 opacity-20">
+          <div class="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-icpc-orange blur-3xl"></div>
+          <div class="absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-icpc-orange blur-3xl"></div>
+          <div class="pointer-events-none absolute left-10 top-16 h-4 w-4 rounded-full bg-icpc-peach/70 animate-pulse-soft"></div>
+          <div class="pointer-events-none absolute right-16 top-24 h-5 w-5 rounded-full border border-white/40 animate-loop-spin"></div>
+          <div class="pointer-events-none absolute -right-10 bottom-16 h-8 w-8 rounded-full border border-icpc-orange/45 animate-wave-loop"></div>
+        </div>
+
+        <div class="relative mx-auto max-w-6xl px-4 pb-12 pt-28 md:px-6 lg:px-8 lg:pb-16 lg:pt-32">
+          <p class="text-xs font-semibold uppercase tracking-[0.25em] text-icpc-orange/95">
+            Career Outcomes
+          </p>
+          <h1 class="mt-3 max-w-2xl text-3xl font-semibold leading-tight md:text-4xl lg:text-[2.6rem]">
+            Professional pathways after ICPC
+          </h1>
+          <p class="mt-4 max-w-3xl text-sm leading-relaxed text-white/80 md:text-base">
+            ICPC equips you with competencies to pursue roles across politics, policy research,
+            programme management, communications, and governance consulting.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a
+              href="./index.html#application-form"
+              class="inline-flex items-center justify-center rounded-full bg-icpc-orange px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.16em] text-white shadow-md transition-transform transition-shadow duration-200 hover:-translate-y-0.5 hover:bg-icpc-orange-dark hover:shadow-lg active:scale-95"
+            >
+              Apply now
+            </a>
+            <a
+              href="#competencies"
+              class="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.16em] text-white transition-transform transition-shadow duration-200 hover:-translate-y-0.5 hover:border-icpc-orange/60 hover:text-icpc-orange hover:shadow-md active:scale-95"
+            >
+              Explore competencies
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gamification mini-play -->
+      <section class="bg-icpc-cream py-10 md:py-14">
+        <div class="mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+            <h2 class="text-lg font-semibold text-slate-900">Gamified Career Journey</h2>
+            <p class="mt-2 text-sm text-slate-700">Complete milestones in this page to level up. Every details card interaction earns you points.</p>
+            <div class="mt-4 flex flex-wrap gap-3">
+              <button class="gamify-action rounded-full bg-icpc-orange px-5 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-white shadow transition hover:bg-icpc-orange-dark" data-reward="15">
+                Visit this page (+15)
+              </button>
+              <button class="gamify-action rounded-full border border-icpc-orange bg-white px-5 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-icpc-orange shadow-sm transition hover:bg-icpc-orange/10" data-reward="25">
+                Engage with a role card (+25)
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pathways -->
+      <section class="bg-white py-10 md:py-14">
+        <div class="mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
+          <div class="grid gap-8 md:grid-cols-12 md:items-start">
+            <div class="md:col-span-5">
+              <p class="text-xs font-semibold uppercase tracking-[0.25em] text-icpc-orange">
+                Pathways
+              </p>
+              <h2 class="mt-2 text-2xl font-semibold leading-tight text-slate-900 md:text-3xl">
+                Roles you can grow into
+              </h2>
+              <p class="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
+                Build a profile that stands out with structured work, clear writing, data-backed analysis,
+                and execution skills—aligned to roles that matter.
+              </p>
+            </div>
+
+            <div class="md:col-span-7">
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl bg-icpc-cream p-5 shadow-sm gamify-action cursor-pointer" data-reward="10">
+                  <p class="text-sm font-semibold text-slate-900">Policy &amp; Research</p>
+                  <p class="mt-2 text-sm text-slate-700">
+                    Research associate, policy analyst, public policy fellow, think-tank roles.
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-icpc-cream p-5 shadow-sm gamify-action cursor-pointer" data-reward="10">
+                  <p class="text-sm font-semibold text-slate-900">Politics &amp; Campaigns</p>
+                  <p class="mt-2 text-sm text-slate-700">
+                    Political consulting, campaign support, constituency work, strategic outreach.
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-icpc-cream p-5 shadow-sm gamify-action cursor-pointer" data-reward="10">
+                  <p class="text-sm font-semibold text-slate-900">Programme Management</p>
+                  <p class="mt-2 text-sm text-slate-700">
+                    Implementation roles in NGOs, social enterprises, foundations, and CSR teams.
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-icpc-cream p-5 shadow-sm gamify-action cursor-pointer" data-reward="10">
+                  <p class="text-sm font-semibold text-slate-900">Communications</p>
+                  <p class="mt-2 text-sm text-slate-700">
+                    Policy communications, public affairs, storytelling for impact, stakeholder comms.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stats row -->
+          <div class="mt-10 grid gap-4 sm:grid-cols-3">
+            <div class="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm animate-float-soft">
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-icpc-orange">Capability</p>
+              <p class="mt-2 text-3xl font-semibold text-slate-900">6+</p>
+              <p class="mt-1 text-sm text-slate-700">Career-aligned competencies</p>
+            </div>
+            <div class="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-icpc-orange">Outcome focus</p>
+              <p class="mt-2 text-3xl font-semibold text-slate-900">1</p>
+              <p class="mt-1 text-sm text-slate-700">Portfolio-worthy body of work</p>
+            </div>
+            <div class="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-icpc-orange">Support</p>
+              <p class="mt-2 text-3xl font-semibold text-slate-900">Mentored</p>
+              <p class="mt-1 text-sm text-slate-700">Guidance through the programme</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Competencies -->
+      <section id="competencies" class="bg-icpc-cream py-10 md:py-14">
+        <div class="mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
+          <div class="text-center">
+            <p class="text-xs font-semibold uppercase tracking-[0.25em] text-icpc-orange">
+              Competencies developed through ICPC
+            </p>
+            <h2 class="mt-2 text-2xl font-semibold text-slate-900 md:text-3xl">
+              A well-rounded, job-ready skill set
+            </h2>
+          </div>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:mt-10 lg:grid-cols-3">
+            <div class="rounded-2xl bg-white p-6 shadow-sm">
+              <div class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-icpc-orange/10 text-icpc-orange">
+                01
+              </div>
+              <p class="mt-4 text-sm font-semibold text-slate-900">Strategic thinking</p>
+              <p class="mt-2 text-sm text-slate-700">
+                Frame problems, set priorities, and develop practical approaches to complex issues.
+              </p>
+            </div>
+            <div class="rounded-2xl bg-white p-6 shadow-sm">
+              <div class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-icpc-orange/10 text-icpc-orange">
+                02
+              </div>
+              <p class="mt-4 text-sm font-semibold text-slate-900">Research &amp; writing</p>
+              <p class="mt-2 text-sm text-slate-700">
+                Build arguments, write clearly, and communicate insights with structure and clarity.
+              </p>
+            </div>
+            <div class="rounded-2xl bg-white p-6 shadow-sm">
+              <div class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-icpc-orange/10 text-icpc-orange">
+                03
+              </div>
+              <p class="mt-4 text-sm font-semibold text-slate-900">Execution &amp; ownership</p>
+              <p class="mt-2 text-sm text-slate-700">
+                Deliver reliably—define tasks, coordinate, and push work to completion.
+              </p>
+            </div>
+            <div class="rounded-2xl bg-white p-6 shadow-sm">
+              <div class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-icpc-orange/10 text-icpc-orange">
+                04
+              </div>
+              <p class="mt-4 text-sm font-semibold text-slate-900">Stakeholder management</p>
+              <p class="mt-2 text-sm text-slate-700">
+                Work across teams, communicate expectations, and build trust in professional settings.
+              </p>
+            </div>
+            <div class="rounded-2xl bg-white p-6 shadow-sm">
+              <div class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-icpc-orange/10 text-icpc-orange">
+                05
+              </div>
+              <p class="mt-4 text-sm font-semibold text-slate-900">Systems perspective</p>
+              <p class="mt-2 text-sm text-slate-700">
+                Understand how institutions work and where interventions can create leverage.
+              </p>
+            </div>
+            <div class="rounded-2xl bg-white p-6 shadow-sm">
+              <div class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-icpc-orange/10 text-icpc-orange">
+                06
+              </div>
+              <p class="mt-4 text-sm font-semibold text-slate-900">Communication</p>
+              <p class="mt-2 text-sm text-slate-700">
+                Present your ideas, craft narratives, and communicate effectively with diverse audiences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Alumni -->
+      <section class="bg-white py-10 md:py-14">
+        <div class="mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
+          <div class="text-center">
+            <p class="text-xs font-semibold uppercase tracking-[0.25em] text-icpc-orange">
+              Visit our alumni section
+            </p>
+            <h2 class="mt-2 text-2xl font-semibold text-slate-900 md:text-3xl">
+              Hear from ICPC alumni
+            </h2>
+          </div>
+
+          <div class="mt-8 grid gap-4 md:grid-cols-2 lg:mt-10">
+            <figure class="rounded-2xl bg-icpc-cream p-6 shadow-sm">
+              <blockquote class="text-sm leading-relaxed text-slate-800">
+                “The programme helped me build confidence in policy writing and gave me a clear structure
+                for approaching governance problems.”
+              </blockquote>
+              <figcaption class="mt-4 flex items-center gap-3">
+                <div class="h-10 w-10 rounded-full bg-white shadow-sm ring-2 ring-white"></div>
+                <div>
+                  <p class="text-sm font-semibold text-slate-900">Alumni Name</p>
+                  <p class="text-xs text-slate-600">Policy Associate</p>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="rounded-2xl bg-icpc-cream p-6 shadow-sm">
+              <blockquote class="text-sm leading-relaxed text-slate-800">
+                “ICPC gave me a strong peer network and tangible outputs I could speak to in interviews.”
+              </blockquote>
+              <figcaption class="mt-4 flex items-center gap-3">
+                <div class="h-10 w-10 rounded-full bg-white shadow-sm ring-2 ring-white"></div>
+                <div>
+                  <p class="text-sm font-semibold text-slate-900">Alumni Name</p>
+                  <p class="text-xs text-slate-600">Programme Analyst</p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="bg-icpc-cream py-10 md:py-14">
+        <div class="mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
+          <div class="rounded-3xl bg-slate-900 px-6 py-10 text-white md:px-10 md:py-12">
+            <div class="grid gap-6 md:grid-cols-12 md:items-center">
+              <div class="md:col-span-8">
+                <p class="text-xs font-semibold uppercase tracking-[0.25em] text-icpc-orange/95">
+                  Ready to apply?
+                </p>
+                <h3 class="mt-2 text-2xl font-semibold leading-tight md:text-3xl">
+                  Start your ICPC application in minutes
+                </h3>
+                <p class="mt-3 text-sm leading-relaxed text-white/80 md:text-base">
+                  It takes about 5–7 minutes to complete. Share your details and we’ll reach out with next steps.
+                </p>
+              </div>
+              <div class="md:col-span-4 md:flex md:justify-end">
+                <a
+                  href="./index.html#application-form"
+                  class="inline-flex w-full items-center justify-center rounded-full bg-icpc-orange px-8 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-white shadow-md transition hover:bg-icpc-orange-dark md:w-auto"
+                >
+                  Apply now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script type="module" src="./public/js/main.js"></script>
+  </body>
+</html>
+
